@@ -208,4 +208,29 @@ html {
     margin-block-end: 14px;
 }
 
+.members {
+    display: flex;
+    justify-content: center;
+}
+.principal_container {
+    width: 240px;
+    height: 844px;
+    transform: translateY(-38px);
+}
+.members_cards__info {
+    transform: translate(16px,-60px);
+}
+
+.members_cards__info h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--white);
+    margin-block-end: 5px;
+}
+
+.members_cards__info h5 {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 700;
+}
 
