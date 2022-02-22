@@ -65,8 +65,7 @@ html {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-inline-start: 12px;
-    margin-inline-end: 12px;
+    align-items: center;
 }
 .hero-left {
     display: flex;
@@ -77,6 +76,7 @@ html {
 .hero-left p {
     font-size: 14px;
     margin-block-end: 16px;
+    text-align: center;
 }
 .header__image {
     margin-block-start: 46px;
@@ -84,7 +84,7 @@ html {
 }
 .buttons-hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .buttons-hero .secondary-button {
@@ -101,10 +101,111 @@ html {
     margin-block-start: 30px;
     height: 500px;
     background-image: url('../assets/GrayBG.png');
+    
 }
 
 .img-container {
     height: 100%;
+    width: 100%;
     background-size: cover;
+    object-fit: contain;
     background-image: url('../assets/slash_black.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.reach-mo__info {
+    transform: translateY(-110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reach-mo__info h3 {
+    font-size: 2.2rem;
+    color: var(--white);
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    margin-block-end: 20px;
+}
+
+.reach-mo__info button {
+    width: 66px;
+    height: 21px;
+    border: none;
+    background-color: var(--white);
+    padding: 6px 12px;
+    font-size: 6px;
+    font-weight: 900;
+    color: var(--primaryGreen);
+    border-radius: 3px;
+}
+
+.section2 {
+    height: 700px;
+    background-color: var(--secondaryGreen);
+    transform: skewY(-20deg) translateY(-60px);
+    position: relative;
+}
+
+.cards_container {
+    transform: skewY(20deg);
+    width: 209px;
+    height: 294px;
+    background-color: var(--white);
+    filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.160784));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards_container__info {
+    width: 164px;
+    margin-block-start: 16px;
+}
+.cards_container__info p {
+    font-size: 1.2rem;
+    font-weight: 500px;
+    margin-block-end: 14px;
+}
+.cards_container__info a {
+    font-size: 1.2rem;
+    color: var(--primaryGreen);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.section2 .card1 {
+    transform: skewY(20deg) translateY(-250px);
+    margin-inline-start: 10px;
+}
+
+.section2 .card2 {
+    transform: skewY(20deg) translateY(-164px);
+    height: 300px;
+    inset-inline-end: 10px;
+    position: absolute;
+}
+
+.section2 .transparent {
+    --width: 209px;
+    background-color: transparent;
+    margin-inline-start: calc(100vw/2 - var(--width)/2);
+    transform: skewY(20deg) translateY(120px);
+
+}
+
+.section2 .transparent h3 {
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+
+}
+.section2 .card_info p {
+    font-size: 1.2rem;
+    font-weight: 500px;
+    margin-block-end: 14px;
+}
+
+
