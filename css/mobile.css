@@ -214,7 +214,10 @@ html {
 }
 .principal_container {
     width: 240px;
-    height: 844px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transform: translateY(-38px);
 }
 .members_cards__info {
@@ -232,5 +235,96 @@ html {
     font-size: 1.2rem;
     color: var(--white);
     font-weight: 700;
+}
+
+.members_list_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members_list_form h1 {
+    font-size: 26px;
+    font-weight: 900;
+    margin-block-end: 14px;
+    text-align: center;
+}
+
+.members_list_form input {
+    width: 222px;
+    height: 42px;
+    border-radius: 5px;
+    /* border: none; */
+    border: 1px solid #9F9F9F;
+    padding: 12px 12px;
+    margin-block-end: 7px;
+    font-size: 13px;
+}
+
+.members_list_form__down {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+.members_list_form__down a {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primaryGreen);
+    margin-block-end: 7px;
+}
+
+.members_list_form__down button {
+    width: 144px;
+    height: 42px;
+}
+
+.brands {
+    margin-block-start: 54px;
+}
+.brands_title {
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    margin-block-end: 40px;
+}
+.brands_logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.brands_logos > * {
+    justify-self: center;
+}
+
+.last_logo {
+    grid-column: 1/3;
+}
+
+.get_started {
+    height: 290px;
+    background-color: var(--primaryGreen);
+    margin-block-start: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get_started h1 {
+    font-size: 42px;
+    color: var(--white);
+    font-weight: 900;
+    text-align: center;
+    margin-block-end: 40px;
+}
+
+.pick_plan {
+    background-color: var(--white);
+    color: var(--primaryGreen);
+    height: 42px;
 }
 
