@@ -20,6 +20,11 @@ html {
     height: 400px;
 }
 
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
 .nav-container {
     height: 62px;
     display: flex;
@@ -312,6 +317,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-block-end: 50px;
 }
 
 .get_started h1 {
@@ -328,3 +334,44 @@ html {
     height: 42px;
 }
 
+.header-links div {
+    display: flex;
+    flex-direction: column;
+    margin-inline-end: 54px;
+}
+
+.header-links div a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+    margin-block-end: 7px;
+}
+
+.links_container {
+    display: flex;
+    margin-block-start: 20px;
+    margin-inline-start: 17px;
+}
+.line {
+    width: 286px;
+    height: 1px;
+    background-color: #DBDBDB;
+    margin-block: 24px;
+}
+@media(min-width: 426px) {
+    .header-links {
+        display: flex;
+        flex-direction: row;
+    }
+   
+}
+@media(min-width: 768px) {
+    .logo_and_links {
+        display: flex;
+        justify-content: center;
+    }
+    .links_container {
+        margin-inline-start: 130px;
+    }
+}
