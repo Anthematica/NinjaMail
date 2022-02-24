@@ -354,11 +354,38 @@ footer{
     margin-inline-start: 17px;
 }
 .line {
-    width: 286px;
+    --width:300px;
+    width: 300px;
     height: 1px;
     background-color: #DBDBDB;
     margin-block: 24px;
+    margin-inline-start: calc(100vw/2 - var(--width)/2);;
 }
+
+.rights_container {
+    margin-inline-start: 18px;
+    margin-block-end: 52px;
+}
+
+.rights_container .idk {
+    font-size: 9px;
+    font-weight: 700;
+    margin-block-end: 20px;
+    width: 186px;
+    line-height: 19px;
+}
+
+.rights_container .right_links {
+    font-size: 9px;
+    font-weight: 700;
+}
+.rights_container .right_links a {
+    display: inline-block;
+    margin-block-end: 8px;
+    text-decoration: none;
+    color: black;
+}
+
 @media(min-width: 426px) {
     .header-links {
         display: flex;
